@@ -1,0 +1,67 @@
+/* Contenedor que centra la calculadora */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #121212;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calculadora {
+  width: 400px;
+  /* Más ancho */
+  padding: 25px;
+  background: #222;
+  border-radius: 16px;
+  box-shadow: 0 0 30px #0008;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.calculadora input[type="text"] {
+  height: 80px;
+  /* Más alto */
+  background-color: #111;
+  color: #0f0;
+  font-size: 3rem;
+  /* Texto más grande */
+  text-align: right;
+  padding: 0 20px;
+  border-radius: 12px;
+  border: none;
+  user-select: none;
+  box-shadow: inset 0 0 12px #0f0a;
+  overflow-x: auto;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  /* Más espacio entre botones */
+}
+
+.botones button {
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.8rem;
+  /* Botones más grandes */
+  padding: 25px 0;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.botones button:hover {
+  background-color: #666;
+}
+
+.botones button:active {
+  background-color: #222;
+}
