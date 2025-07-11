@@ -63,9 +63,8 @@ export const Calculadora = () => {
         }
         setNumeroActual(r)
     }
-
     const deshacer = () => {
-        setNumeroActual(numeroActual.slice(0, -1))
+        setNumeroActual(numeroActual.substring(0, numeroActual.length - 1))
     }
 
     return (
