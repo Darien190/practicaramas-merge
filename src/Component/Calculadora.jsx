@@ -64,6 +64,10 @@ export const Calculadora = () => {
         setNumeroActual(r)
     }
 
+    const deshacer = () => {
+        setNumeroActual(numeroActual.slice(0, -1))
+    }
+
     return (
         <>
             <div className="calculadora">
@@ -88,6 +92,7 @@ export const Calculadora = () => {
                     <button onClick={() => num(0)}>0</button>
                     <button onClick={iguals}>+</button>
                     <button onClick={() => calcular(data)}>=</button>
+                    <button onClick={deshacer}>"borrar"</button>
                 </div>
             </div>
         </>
